@@ -1,6 +1,6 @@
 # Filip Ilic – About Me
 
-This repository contains the source for my personal **About Me** page, hosted via GitHub Pages at [https://f-ilic.github.io](https://f-ilic.github.io).
+This repository contains the source for my personal **About Me** page, hosted via GitHub Pages at [https://ilicfilip.github.io](https://ilicfilip.github.io).
 
 ## 👋 Hello!
 
@@ -10,9 +10,9 @@ I'm **Filip Ilic**, a WordPress developer based in **Belgrade, Serbia**, with ov
 
 - Built the official website for [Novak Djokovic](https://novakdjokovic.com) in 2012
 - Former ThemeForest author under [pukkathemes](https://themeforest.net/user/pukkathemes) (2013–2017)
-- Worked with clients via Toptal (2016–2017)
-- Developer on the Avada team (2017–2022)
-- Currently working as a Software Engineer at Emilia Capital
+- Worked with clients via [Toptal](https://toptal.com) (2016–2017)
+- Developer on the [Avada](https://avada.com) team (2017–2022)
+- Currently working as a Software Engineer at [Emilia Capital](https://emilia.capital)
 
 ## 📄 About This Page
 
