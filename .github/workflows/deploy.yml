@@ -1,22 +1,24 @@
-name: Deploy Astro Site to GitHub Pages
+name: Deploy to GitHub Pages
 
 on:
   push:
-    branches:
-      - main  # Trigger on main branch push
+    branches: [main]  # Trigger deployment only on main branch push
+
+permissions:
+  contents: write
 
 jobs:
-  build-and-deploy:
+  deploy:
     runs-on: ubuntu-latest
 
     steps:
       - name: Checkout code
-        uses: actions/checkout@v4
+        uses: actions/checkout@v3
 
-      - name: Set up Node.js
-        uses: actions/setup-node@v4
+      - name: Setup Node.js
+        uses: actions/setup-node@v3
         with:
-          node-version: 20
+          node-version: 18
 
       - name: Install dependencies
         run: npm install
@@ -28,6 +30,6 @@ jobs:
         uses: peaceiris/actions-gh-pages@v3
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: ./dist  # Pointing to dist/
-          publish_branch: gh-pages  # Push to the gh-pages branch
+          publish_dir: ./dist  # Make sure you're pointing to the dist directory
+          publish_branch: gh-pages  # Deploy to gh-pages branch (not main)
           force_orphan: true  # Ensures clean commit history
