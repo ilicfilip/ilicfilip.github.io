@@ -27,7 +27,7 @@ vendor/
 bower_components/
 
 # Build outputs
-dist/
+# dist/ is kept because GitHub Pages needs it!
 build/
 .tmp/
 .temp/
